@@ -10,11 +10,12 @@ Course project for PHYS 474 at the University of Waterloo.
 .
 ├── config.py                  # shared constants: cosmology, cuts, pair and matching criteria
 ├── 01_load_sample.ipynb       # load GAMA tables, merge, apply sample cuts   -> out/parent.fits
-├── 02_find_pairs.ipynb        # find close pairs, flag isolated galaxies     -> out/pairs.fits
-├── 03_controls.ipynb          # match 5 controls per paired galaxy           -> out/pairs.fits
-├── 04_sfr_magphys.ipynb       # MagPhys sSFR enhancement                     -> out/sfr_magphys.fits
-├── 05_sfr_halpha.ipynb        # Hα SFRs, BPT classification, enhancement     -> out/sfr_halpha.fits
-├── 06_ssfr_plots.ipynb        # bin by separation, print and plot results
+├── 02_bpt_diagram.ipynb       # BPT classification, remove AGN/composites    -> out/parent.fits
+├── 03_find_pairs.ipynb        # find close pairs, flag isolated galaxies     -> out/pairs.fits
+├── 04_controls.ipynb          # match 5 controls per paired galaxy           -> out/pairs.fits
+├── 05_sfr_magphys.ipynb       # MagPhys sSFR enhancement                     -> out/sfr_magphys.fits
+├── 06_sfr_halpha.ipynb        # Hα SFRs, enhancement                         -> out/sfr_halpha.fits
+├── 07_ssfr_plots.ipynb        # bin by separation, print and plot results
 ├── data/                      # GAMA FITS tables (not included, see below)
 ├── out/                       # intermediate tables written by the notebooks
 └── figs/                      # figures (PDF and PNG)
